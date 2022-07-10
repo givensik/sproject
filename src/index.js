@@ -4,18 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import NaverLogin from 'react-naver-login';
-
+// import NaverLogin from 'react-naver-login';
+import { CookiesProvider, useCookies } from 'react-cookie';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-    
-  </BrowserRouter>
+  
+    <BrowserRouter>
+      <React.StrictMode>
+        <CookiesProvider>
+          <App />
+        </CookiesProvider>
+      </React.StrictMode>
+   </BrowserRouter>
+  
+  
   
 );
 

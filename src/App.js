@@ -13,6 +13,7 @@ import Login from './Routes/Login';
 import Home from './Routes/Home';
 import NaverLogin from "./Routes/NaverLogin";
 import NaverCallback from "./Routes/NaverCallback";
+import Mypage from "./Routes/Mypage";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
          <Route path ="/login" element ={<Login />}></Route>
          <Route path ="/NaverLogin" element ={<NaverLogin />}></Route>
          <Route path ="/NaverCallback" element = {<NaverCallback></NaverCallback>}></Route>
+         <Route path ="/Mypage" element = {<Mypage></Mypage>}></Route>
+         
     </Routes>
 
     
