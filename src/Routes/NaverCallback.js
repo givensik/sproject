@@ -13,7 +13,7 @@ function NaverCallback() {
   // if(token === 'AAAAOKgAEL7zrTw6TTxb8XAXBh_14GKnvapMgS1wqVeWBu6MVZ_gbSHuejk7nu0pGXws0SjEmpq6X_oflXjkmEXZmrU'){
   //   name = "givensik"
   // }
-
+  window.close();
   return (
 
     <div>
